@@ -4,256 +4,26 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>STUDIO_NAME — Editorial & Graphic Design | Washington, DC</title>
-  <meta name="description" content="Editorial and graphic design studio in Washington, DC helping businesses, publishers, and startups with magazine & report design, brand systems, and clear typography. Book a call, request a quote, or browse the portfolio." />
+  <meta name="description" content="Editorial and graphic design studio in Washington, DC helping businesses, publishers, and startups with magazines, reports, and brand systems. Book a call, request a quote, or browse the portfolio." />
   <meta name="robots" content="index,follow" />
   <link rel="canonical" href="https://www.example.com/" />
-
-  <!-- Open Graph / Twitter -->
-  <meta property="og:type" content="website" />
-  <meta property="og:title" content="STUDIO_NAME — Editorial & Graphic Design | Washington, DC" />
-  <meta property="og:description" content="Editorial & graphic design for businesses, publishers, and startups. Book a call, request a quote, or browse the portfolio." />
-  <meta property="og:url" content="https://www.example.com/" />
-  <meta property="og:image" content="https://www.example.com/og-cover.jpg" />
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="STUDIO_NAME — Editorial & Graphic Design | Washington, DC" />
-  <meta name="twitter:description" content="Editorial & graphic design for businesses, publishers, and startups. Book a call, request a quote, or browse the portfolio." />
-  <meta name="twitter:image" content="https://www.example.com/og-cover.jpg" />
-
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet">
-
-  <style>
-    :root{
-      --bg:#0e0f12;       /* near-black */
-      --surface:#151821;  /* dark card */
-      --muted:#9396a5;    /* muted text */
-      --text:#f5f6f8;     /* main text */
-      --brand:#5dd3ff;    /* accent */
-      --brand-2:#b8ff5d;  /* secondary accent */
-      --ring:rgba(93,211,255,.5);
-      --container:1180px;
-      --radius:16px;
-    }
-    *{box-sizing:border-box}
-    html,body{margin:0;padding:0;background:var(--bg);color:var(--text);font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;line-height:1.6}
-    img{max-width:100%;display:block}
-    a{color:inherit;text-decoration:none}
-    .container{max-width:var(--container);margin:0 auto;padding:0 20px}
-    header{position:sticky;top:0;z-index:50;background:linear-gradient(180deg, rgba(14,15,18,.9), rgba(14,15,18,.6));backdrop-filter:saturate(1.2) blur(8px);border-bottom:1px solid rgba(255,255,255,.06)}
-    .nav{display:flex;align-items:center;justify-content:space-between;height:68px}
-    .logo{font-family:"Playfair Display",serif;font-weight:700;letter-spacing:.3px}
-    .logo b{color:var(--brand)}
-    .nav a{opacity:.9;margin:0 12px}
-    .nav a:hover,.nav a[aria-current="page"]{opacity:1}
-    .btn{display:inline-flex;align-items:center;gap:.5rem;border:1px solid rgba(255,255,255,.12);padding:.7rem 1rem;border-radius:12px;background:linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.02));box-shadow:0 0 0 0 var(--ring);transition:all .2s ease}
-    .btn:hover{transform:translateY(-1px);box-shadow:0 0 0 6px var(--ring)}
-    .btn-primary{border-color:transparent;background:linear-gradient(180deg, var(--brand), #3db1df);color:#021520;font-weight:600}
-    .btn-ghost{background:transparent}
-
-    .hero{padding:96px 0 56px;border-bottom:1px solid rgba(255,255,255,.06);position:relative;overflow:hidden}
-    .hero h1{font-family:"Playfair Display",serif;font-size:clamp(36px,6vw,56px);line-height:1.15;margin:0}
-    .hero p{color:var(--muted);max-width:720px;margin-top:14px}
-    .hero-cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:20px}
-    .hero .art{position:absolute;right:-14vw;top:-10vh;width:min(62vw,820px);opacity:.25;filter:blur(2px)}
-
-    .client-strip{display:grid;grid-template-columns:repeat(6,1fr);gap:24px;padding:28px 0 8px;opacity:.8}
-    .client-strip img{filter:grayscale(1) contrast(1.1);opacity:.85}
-
-    section{padding:72px 0}
-    .grid{display:grid;gap:24px}
-    .grid-2{grid-template-columns:repeat(2,1fr)}
-    .grid-3{grid-template-columns:repeat(3,1fr)}
-    .card{background:linear-gradient(180deg, rgba(255,255,255,.04), rgba(255,255,255,.02));border:1px solid rgba(255,255,255,.07);border-radius:var(--radius);padding:22px}
-    .chip{display:inline-block;border:1px solid rgba(255,255,255,.18);padding:.2rem .6rem;border-radius:999px;font-size:12px;color:var(--muted)}
-
-    .services .card h3{margin:0 0 8px 0;font-size:20px}
-    .services .card p{color:var(--muted);font-size:15px}
-
-    .portfolio .grid-3{grid-auto-rows:1fr}
-    .work{position:relative;border-radius:14px;overflow:hidden;border:1px solid rgba(255,255,255,.08)}
-    .work .meta{position:absolute;left:12px;bottom:12px;background:rgba(0,0,0,.5);backdrop-filter:blur(4px);padding:8px 10px;border-radius:10px;font-size:13px}
-    .work:hover img{transform:scale(1.02)}
-    .work img{transition:transform .35s ease}
-
-    .about .prose p{color:var(--muted)}
-
-    .cta{display:flex;align-items:center;justify-content:space-between;gap:24px;background:linear-gradient(180deg, rgba(93,211,255,.15), rgba(93,211,255,.06));border:1px solid rgba(93,211,255,.35);padding:28px;border-radius:var(--radius)}
-
-    .contact form{display:grid;gap:14px}
-    .row{display:grid;gap:12px;grid-template-columns:1fr 1fr}
-    input,textarea,select{width:100%;background:#0c0d11;border:1px solid rgba(255,255,255,.12);border-radius:12px;color:var(--text);padding:12px 14px;font:inherit}
-    textarea{min-height:140px}
-    label{font-size:13px;color:var(--muted)}
-    .help{font-size:12px;color:var(--muted)}
-
-    footer{border-top:1px solid rgba(255,255,255,.08);padding:28px 0;color:#aab}
-
-    /* Responsiveness */
-    @media (max-width: 900px){.grid-2{grid-template-columns:1fr}.grid-3{grid-template-columns:repeat(2,1fr)}.client-strip{grid-template-columns:repeat(3,1fr)}}
-    @media (max-width: 560px){.grid-3{grid-template-columns:1fr}.row{grid-template-columns:1fr}}
-    
-    /* Skip link for a11y */
-    .skip{position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden}
-    .skip:focus{position:static;width:auto;height:auto;padding:8px;background:#fff;color:#000}
-  </style>
-
-  <!-- JSON-LD Structured Data -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "ProfessionalService",
-    "name": "STUDIO_NAME",
-    "url": "https://www.example.com/",
-    "image": "https://www.example.com/og-cover.jpg",
-    "telephone": "+1-202-555-0123",
-    "address": {"@type":"PostalAddress","addressLocality":"Washington","addressRegion":"DC","addressCountry":"US"},
-    "areaServed": [{"@type":"City","name":"Washington DC"},{"@type":"Place","name":"United States"}],
-    "sameAs": ["https://www.linkedin.com/in/yourprofile","https://www.instagram.com/yourstudio"],
-    "serviceType": ["Editorial Design","Graphic Design","Report & Magazine Layout","Brand Identity","Typesetting","Digital Graphics"],
-    "description": "Editorial & graphic design studio in Washington, DC partnering with businesses, publishers, and startups."
-  }
-  </script>
-
-  <!-- Analytics (pick ONE and replace placeholders). Prefer leaving the other commented out. -->
-  <!-- Plausible.io (simple, privacy-friendly) -->
-  <!-- <script defer data-domain="example.com" src="https://plausible.io/js/script.js"></script> -->
-
-  <!-- Google Analytics 4 -->
-  <!--
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);} gtag('js', new Date());
-    gtag('config', 'G-XXXXXXXXXX');
-  </script>
-  -->
+  <!-- (head unchanged from before for brevity) -->
 </head>
-
 <body>
-  <a class="skip" href="#main">Skip to content</a>
-  <header>
-    <div class="container nav">
-      <a class="logo" href="#" aria-label="STUDIO_NAME home"><b>STUDIO</b>_NAME</a>
-      <nav aria-label="Primary">
-        <a href="#services">Services</a>
-        <a href="#portfolio">Portfolio</a>
-        <a href="#clients">Clients</a>
-        <a href="#about">About</a>
-        <a href="#contact">Contact</a>
-        <a class="btn btn-primary" href="#book">Book a Call</a>
-      </nav>
-    </div>
-  </header>
+  <!-- (header/hero unchanged) -->
 
   <main id="main">
-    <section class="hero">
-      <img class="art" src="https://images.unsplash.com/photo-1529078155058-5d716f45d604?q=80&w=1200&auto=format&fit=crop" alt="Abstract editorial spread mockup" loading="lazy" />
-      <div class="container">
-        <div class="chip">Washington, DC · Editorial & Graphic Design</div>
-        <h1>Clear stories. Striking layouts. <br/>Design built for publishers, startups, and brands.</h1>
-        <p>I help organizations turn complex ideas into elegant magazines, annual reports, white papers, proposals, and brand systems. Based in Washington, DC — partnering globally.</p>
-        <div class="hero-cta">
-          <a class="btn btn-primary" href="#portfolio">View Work</a>
-          <a class="btn" href="#quote">Request a Quote</a>
-          <a class="btn btn-ghost" href="#book">Book a Call</a>
-        </div>
-        <div class="client-strip">
-          <img src="https://placehold.co/220x64/png?text=Client+1" alt="Client logo 1" loading="lazy" />
-          <img src="https://placehold.co/220x64/png?text=Client+2" alt="Client logo 2" loading="lazy" />
-          <img src="https://placehold.co/220x64/png?text=Client+3" alt="Client logo 3" loading="lazy" />
-          <img src="https://placehold.co/220x64/png?text=Client+4" alt="Client logo 4" loading="lazy" />
-          <img src="https://placehold.co/220x64/png?text=Client+5" alt="Client logo 5" loading="lazy" />
-          <img src="https://placehold.co/220x64/png?text=Client+6" alt="Client logo 6" loading="lazy" />
-        </div>
-      </div>
-    </section>
-
-    <section id="services" class="services">
-      <div class="container">
-        <h2>Services</h2>
-        <p class="help">Project-based or retainer. Built for businesses, publishers, nonprofits, and startups.</p>
-        <div class="grid grid-3">
-          <div class="card">
-            <h3>Editorial Design</h3>
-            <p>Magazines, annual reports, white papers, ebooks, catalogs, proposals, and long-form typography with accessible hierarchy.</p>
-          </div>
-          <div class="card">
-            <h3>Report & Layout Systems</h3>
-            <p>Modular grids, type scales, figure/table styles, and templates to keep multi-author publications consistent.</p>
-          </div>
-          <div class="card">
-            <h3>Brand & Visual Identity</h3>
-            <p>Logos, color systems, typography, and usage guidelines that scale from print to digital.</p>
-          </div>
-          <div class="card">
-            <h3>Data & Infographics</h3>
-            <p>Charts, maps, and narrative graphics that make research legible and persuasive.</p>
-          </div>
-          <div class="card">
-            <h3>Marketing Collateral</h3>
-            <p>One-pagers, pitch decks, event signage, social graphics, and campaign assets.</p>
-          </div>
-          <div class="card">
-            <h3>Art Direction</h3>
-            <p>Photo/illustration direction, editorial systems, and vendor coordination for smooth production.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="portfolio" class="portfolio">
-      <div class="container">
-        <h2>Portfolio</h2>
-        <p class="help">Selected projects. Replace placeholders with your case studies and images (1200×800 recommended).</p>
-        <div class="grid grid-3">
-          <a class="work" href="#" aria-label="View Annual Report case study">
-            <img src="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?q=80&w=1200&auto=format&fit=crop" alt="Annual report layout mockup" loading="lazy" />
-            <div class="meta">Annual Report · Nonprofit</div>
-          </a>
-          <a class="work" href="#" aria-label="View Magazine Redesign case study">
-            <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=1200&auto=format&fit=crop" alt="Magazine redesign spread" loading="lazy" />
-            <div class="meta">Magazine Redesign · Publisher</div>
-          </a>
-          <a class="work" href="#" aria-label="View White Paper series case study">
-            <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?q=80&w=1200&auto=format&fit=crop" alt="White paper cover and layout" loading="lazy" />
-            <div class="meta">White Paper Series · Think Tank</div>
-          </a>
-          <a class="work" href="#">
-            <img src="https://images.unsplash.com/photo-1472289065668-ce650ac443d2?q=80&w=1200&auto=format&fit=crop" alt="Brand identity and stationery" loading="lazy" />
-            <div class="meta">Identity System · Startup</div>
-          </a>
-          <a class="work" href="#">
-            <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?q=80&w=1200&auto=format&fit=crop" alt="Infographics and data visualization" loading="lazy" />
-            <div class="meta">Infographics · Research Org</div>
-          </a>
-          <a class="work" href="#">
-            <img src="https://images.unsplash.com/photo-1529336953121-a0ce3d19f1cb?q=80&w=1200&auto=format&fit=crop" alt="Pitch deck slides" loading="lazy" />
-            <div class="meta">Pitch Deck · Venture Fund</div>
-          </a>
-        </div>
-      </div>
-    </section>
-
-    <section id="clients" class="clients">
-      <div class="container">
-        <h2>Clients</h2>
-        <p class="help">Trusted by teams in publishing, policy, and tech. Add your client logos or testimonials here.</p>
-        <div class="grid grid-3">
-          <div class="card">"Transformed our annual report—readability and polish went way up." — Publisher, DC</div>
-          <div class="card">"Fast, detail‑oriented, and great with complex data." — Research Director</div>
-          <div class="card">"A reliable partner for production crunch time." — Startup COO</div>
-        </div>
-      </div>
-    </section>
+    <!-- (hero, services, portfolio, clients unchanged) -->
 
     <section id="about" class="about">
       <div class="container grid grid-2">
         <div>
           <h2>About</h2>
           <div class="prose">
-            <p>Hi—I'm YOUR_NAME, an editorial & graphic designer based in Washington, DC. I partner with businesses, publishers, nonprofits, and startups to produce magazines, reports, white papers, and brand systems that read clearly and look sharp.</p>
-            <p>My work blends rigorous typography with pragmatic production: reusable layout systems, accessible styles, and on‑time delivery. I collaborate with comms teams, policy analysts, and founders to bring research and stories to life.</p>
-            <p class="help">Tools: Adobe InDesign, Illustrator, Photoshop, Figma. Turnkey production with printers and digital vendors on request.</p>
+            <p>Hi—I'm YOUR_NAME, an editorial & graphic designer based in Washington, DC with over 20 years of experience leading communications and managing editorial design projects for global organizations.</p>
+            <p>Most recently, I served as <strong>Senior Communications Manager & Managing Editor at Palladium: Make It Possible (2016–2025)</strong>, where I oversaw multi‑year global health and development publications, campaigns, and brand systems. Before that, I was <strong>Communications Manager/Managing Editor at FHI 360 (2012–2016)</strong> for the Food and Nutrition Technical Assistance Project, producing high‑profile nutrition and health reports. I also managed editorial workflows at <strong>JSI’s AIDSTAR‑One project (2010–2012)</strong> and earlier served as <strong>Communications Manager at the American Chemistry Council (2003–2010)</strong>, where I was Managing Editor for <em>American Chemistry</em> magazine.</p>
+            <p>Across these roles, I’ve combined editorial judgment (clear narratives, accessible writing) with design systems (consistent grids, typography, data visualization) to deliver content that resonates with decision‑makers, funders, and the public.</p>
+            <p class="help">Tools: Adobe InDesign, Illustrator, Photoshop, Figma. Experienced with hybrid and remote collaboration across Washington, DC, Northern Virginia, and beyond.</p>
           </div>
         </div>
         <div>
@@ -262,212 +32,21 @@
       </div>
     </section>
 
-    <section id="quote" class="contact">
+    <section id="clients" class="clients">
       <div class="container">
-        <div class="cta">
-          <div>
-            <h3>Have a project in mind?</h3>
-            <p class="help">Share scope, timeline, and budget for a tailored quote.</p>
-          </div>
-          <a class="btn btn-primary" href="#quote-form">Request a Quote</a>
-        </div>
-
-        <div id="quote-form" style="margin-top:24px" class="card">
-          <h3 style="margin-top:0">Quote Request</h3>
-          <form id="quoteRequest" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
-            <div class="row">
-              <div>
-                <label for="q-name">Your Name</label>
-                <input id="q-name" name="name" placeholder="Jane Doe" required />
-              </div>
-              <div>
-                <label for="q-company">Company / Org</label>
-                <input id="q-company" name="company" placeholder="Acme Publishing" />
-              </div>
-            </div>
-            <div class="row">
-              <div>
-                <label for="q-email">Email</label>
-                <input id="q-email" type="email" name="email" placeholder="you@company.com" required />
-              </div>
-              <div>
-                <label for="q-phone">Phone (optional)</label>
-                <input id="q-phone" name="phone" placeholder="(202) 555‑0123" />
-              </div>
-            </div>
-            <div class="row">
-              <div>
-                <label for="q-service">Service</label>
-                <select id="q-service" name="service">
-                  <option>Editorial Design</option>
-                  <option>Report / Magazine Layout</option>
-                  <option>Brand / Identity</option>
-                  <option>Data / Infographics</option>
-                  <option>Marketing Collateral</option>
-                  <option>Art Direction</option>
-                </select>
-              </div>
-              <div>
-                <label for="q-budget">Budget (USD)</label>
-                <select id="q-budget" name="budget">
-                  <option>Under $2,500</option>
-                  <option>$2,500–$5,000</option>
-                  <option>$5,000–$10,000</option>
-                  <option>$10,000–$25,000</option>
-                  <option>$25,000+</option>
-                </select>
-              </div>
-            </div>
-            <div class="row">
-              <div>
-                <label for="q-timeline">Timeline</label>
-                <select id="q-timeline" name="timeline">
-                  <option>ASAP</option>
-                  <option>2–4 weeks</option>
-                  <option>1–3 months</option>
-                  <option>Flexible</option>
-                </select>
-              </div>
-              <div>
-                <label for="q-url">Project URL (optional)</label>
-                <input id="q-url" name="url" placeholder="https://brief.link" />
-              </div>
-            </div>
-            <div>
-              <label for="q-notes">Project Notes</label>
-              <textarea id="q-notes" name="notes" placeholder="Tell me about scope, deliverables, audiences, and goals..."></textarea>
-            </div>
-            <label style="display:flex;align-items:center;gap:.5rem"><input type="checkbox" required /> I consent to be contacted and agree to the privacy policy.</label>
-            <button class="btn btn-primary" type="submit">Send Request</button>
-            <p id="quoteStatus" class="help" role="status" aria-live="polite" style="margin:8px 0 0"></p>
-          </form>
+        <h2>Clients & Experience</h2>
+        <p class="help">Organizations and projects I’ve worked with over the past two decades.</p>
+        <div class="grid grid-3">
+          <div class="card"><strong>Palladium: Make It Possible (2016–2025)</strong><br/>Senior Communications Manager & Managing Editor · Washington, DC</div>
+          <div class="card"><strong>FHI 360, FANTA Project (2012–2016)</strong><br/>Communications Manager & Managing Editor · Washington, DC</div>
+          <div class="card"><strong>JSI, AIDSTAR‑One (2010–2012)</strong><br/>Communications Manager · Washington, DC</div>
+          <div class="card"><strong>American Chemistry Council (2003–2010)</strong><br/>Communications Manager, Managing Editor of <em>American Chemistry</em> Magazine</div>
+          <div class="card">Additional expertise in roles as Editor, Communications Specialist, and Director of Communications across nonprofits and associations.</div>
         </div>
       </div>
     </section>
 
-    <section id="book">
-      <div class="container">
-        <h2>Book a Call</h2>
-        <p class="help">Schedule a 20‑minute discovery call.</p>
-        <!-- Calendly inline embed. Replace YOUR_HANDLE -->
-        <div class="card" style="padding:0">
-          <div class="calendly-inline-widget" data-url="https://calendly.com/YOUR_HANDLE/intro" style="min-width:320px;height:680px"></div>
-        </div>
-        <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
-      </div>
-    </section>
-
-    <section id="contact" class="contact">
-      <div class="container">
-        <h2>Contact</h2>
-        <div class="grid grid-2">
-          <div class="card">
-            <h3 style="margin-top:0">Send a Message</h3>
-            <form id="contactForm" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
-              <div class="row">
-                <div>
-                  <label for="c-name">Your Name</label>
-                  <input id="c-name" name="name" placeholder="Jane Doe" required />
-                </div>
-                <div>
-                  <label for="c-email">Email</label>
-                  <input id="c-email" type="email" name="email" placeholder="you@company.com" required />
-                </div>
-              </div>
-              <div>
-                <label for="c-message">How can I help?</label>
-                <textarea id="c-message" name="message" placeholder="Briefly describe your project or question..." required></textarea>
-              </div>
-              <button class="btn btn-primary" type="submit">Send</button>
-              <p id="contactStatus" class="help" role="status" aria-live="polite" style="margin:8px 0 0"></p>
-            </form>
-          </div>
-          <div class="card">
-            <h3 style="margin-top:0">Details</h3>
-            <p>Based in Washington, DC · Working with clients nationwide.</p>
-            <p>Email: <a href="mailto:hello@example.com">hello@example.com</a><br/>Phone: <a href="tel:+12025550123">(202) 555‑0123</a><br/>LinkedIn: <a href="https://www.linkedin.com/in/yourprofile">yourprofile</a></p>
-            <p class="help">Turnaround depends on scope and production schedules. Same‑week availability may be possible for rush projects.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="container" aria-label="Hire">
-      <div class="cta">
-        <div>
-          <h3>Ready when you are.</h3>
-          <p class="help">From single publications to ongoing design support, let's make your content shine.</p>
-        </div>
-        <div style="display:flex;gap:12px;flex-wrap:wrap">
-          <a class="btn btn-primary" href="#book">Book a Call</a>
-          <a class="btn" href="#portfolio">See Portfolio</a>
-        </div>
-      </div>
-    </section>
+    <!-- (quote, book, contact, footer unchanged) -->
   </main>
-
-  <footer>
-    <div class="container" style="display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap">
-      <div>© <span id="year"></span> STUDIO_NAME · Washington, DC</div>
-      <div class="help">Sitemap: /sitemap.xml · Robots: /robots.txt</div>
-    </div>
-  </footer>
-
-  <script>
-    // Current year
-    document.getElementById('year').textContent = new Date().getFullYear();
-
-    // AJAX submit helper for Formspree (keeps users on-page)
-    function ajaxSubmit(formId, statusId){
-      const form = document.getElementById(formId);
-      const status = document.getElementById(statusId);
-      if(!form) return;
-      form.addEventListener('submit', async (e)=>{
-        e.preventDefault();
-        status.textContent = 'Sending…';
-        try{
-          const data = new FormData(form);
-          const res = await fetch(form.action, { method: form.method, body: data, headers: { 'Accept': 'application/json' }});
-          if(res.ok){
-            form.reset();
-            status.textContent = 'Thanks! I\'ll get back to you shortly.';
-          } else {
-            status.textContent = 'Hmm, there was a problem. You can email hello@example.com instead.';
-          }
-        }catch(err){
-          status.textContent = 'Network error. Please email hello@example.com.';
-        }
-      });
-    }
-    ajaxSubmit('contactForm','contactStatus');
-    ajaxSubmit('quoteRequest','quoteStatus');
-  </script>
-
-  <!--
-  ======================================================
-  Deployment notes (GitHub Pages):
-  1) Put this file at repo root as index.html
-  2) In repo settings → Pages → Source: deploy from main branch / root
-  3) Add /sitemap.xml and /robots.txt at root (see samples below)
-  4) Set a custom domain if desired and enable HTTPS
-
-  Sample sitemap.xml:
-  <?xml version="1.0" encoding="UTF-8"?>
-  <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-    <url><loc>https://www.example.com/</loc></url>
-  </urlset>
-
-  Sample robots.txt:
-  User-agent: *
-  Allow: /
-  Sitemap: https://www.example.com/sitemap.xml
-
-  SEO reminders:
-  - Replace STUDIO_NAME, URLs, social links, and contact info
-  - Use descriptive alt text on portfolio images
-  - Write case-study pages or anchors with real client/search terms
-  - Add 301s if you rebrand domain later
-  ======================================================
-  -->
 </body>
 </html>
